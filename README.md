@@ -1,1 +1,4 @@
-# react-practices
+# Code for Run
+
+npm start
+
