@@ -12,7 +12,8 @@ export const NavBar = () => {
                 <nav>
                     <ul className='flex gap-5'>
                         <li><Link to="/" className='font-medium hover:text-sky-500 cursor-pointer transition-all'>Home</Link></li>
-                          <li><Link to="/blogs" className='font-medium hover:text-sky-500 cursor-pointer transition-all'>Blogs</Link></li>
+                        <li><Link to="/users" className='font-medium hover:text-sky-500 cursor-pointer transition-all'>Users</Link></li>
+                        <li><Link to="/blogs" className='font-medium hover:text-sky-500 cursor-pointer transition-all'>Blogs</Link></li>
                     </ul>
                 </nav>
             </div>

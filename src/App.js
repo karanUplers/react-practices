@@ -3,6 +3,8 @@ import { Blogs } from "./components/Blogs";
 import { BlogSingle } from "./components/BlogSingle";
 import { Home } from "./components/Home";
 import { NavBar } from "./components/NavBar";
+import { Users } from "./components/Users";
+import { UserSingle } from "./components/UserSingle";
 
 function App() {
    return (
@@ -11,9 +13,13 @@ function App() {
             <BrowserRouter>
                <NavBar/>
                <Routes>
-                  <Route path="/" element={<Home/>}></Route>
-                  <Route path="/blogs" element={<Blogs/>}></Route>
-                  <Route path="/blogs/:id" element={<BlogSingle/>}></Route>
+                  <Route exact path="/" element={<Home/>}></Route>
+
+                  <Route path="/users" element={<Users/>}></Route>
+                  <Route path="/users/:id" element={<UserSingle/>}></Route>
+
+                  <Route exact path="/blogs" element={<Blogs/>}></Route>
+                  <Route exact path="/blogs/:id" element={<BlogSingle/>}></Route>
                </Routes>
             </BrowserRouter>
          </div>
